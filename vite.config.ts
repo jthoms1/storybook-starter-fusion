@@ -13,7 +13,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, "lib/main.js"),
+      entry: path.resolve(__dirname, "lib/index.ts"),
       name: "MyLib",
       formats: ["es", "umd"],
       fileName: (format: string) => `sample-design-system.${format}.js`,
